@@ -21,4 +21,4 @@ COPY --from=installer /aws-cli-bin/ /usr/local/bin/
 WORKDIR /aws
 #ENTRYPOINT ["/usr/local/bin/aws"]
 
-# docker run -d -t -v C:\Users\[user]\.aws:/root/.aws --name aws-cli aws-cli-detached
+# docker run -d -t -v C:\Users\[user]\.aws:/root/.aws -v D:\:/root/mounted --name aws-cli aws-cli-detached
